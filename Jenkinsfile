@@ -9,7 +9,7 @@ pipeline {
     stage('도커 이미지 빌드 및 푸시') {
       steps {
          sh '''
-           sudo docker build -t jhyun302/kakaodev:yellow
+           sudo docker build -t jhyun302/kakaodev:yellow .
            sudo docker push jhyun302/kakaodev:yellow
         '''
       }
